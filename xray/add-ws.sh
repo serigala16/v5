@@ -40,7 +40,7 @@ v2ray-menu
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Limit ip (DEVICE) : " Limit
 read -p "Limit bw (GB) : " bw
-read -p "Limit quota (GB) : quota
+read -p "Limit quota (GB) : " quota
 read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmess$/a\### '"$user $exp"'\
@@ -124,9 +124,9 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Link GRPC      : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Limit ip    : $Limit (DEVIC)"
-echo -e "Limit bw : $bw (GB)"
+echo -e "Limit bw    : $bw (GB)"
 echo -e "Limit quota : $quota (GB)"
-echo -e "Expired On     : $exp (HARI)" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp (HARI)" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
