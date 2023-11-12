@@ -239,7 +239,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ALI PUTRA VIP]-===================="
+echo "=====================-[HITS TUNNELING]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -280,7 +280,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ DEV >Ali putra vip ]-==============="
+echo "===============-[ DEV > HITS TUNNELING ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
