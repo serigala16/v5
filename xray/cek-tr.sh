@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 
 clear
 echo -n > /tmp/other.txt
-data=( `cat /etc/xray/config.json | grep '^#&#' | cut -d ' ' -f 2`);
+data=( `cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq`);
 echo "-----------------------------------------";
 echo "---------=[ Trojan User Login ]=---------";
 echo "-----------------------------------------";
